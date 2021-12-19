@@ -9,11 +9,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ItsOIK</title>
-        <link rel="stylesheet" href="base.css" />
+        <style>
+            {% style base.css %}
+        </style>
     </head>
     <body>
         <header>
-            <div><h2>ItsOIK.com</h2></div>
+            <div class="header-container">
+                <h2>ItsOIK.com</h2>
+                <div class="header-current-view">
+                    <h3>Current view</h3>
+                    <strong>></strong>
+                    <p>Current Sub Menu</p>
+                </div>
+            </div>
             <div>LOGIN</div>
         </header>
         <nav>
@@ -49,33 +58,20 @@
                     <h1>Hello World</h1>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Obcaecati pariatur doloribus vel nobis eos, voluptatum
-                    voluptatibus iste ducimus adipisci molestias beatae dolor
-                    voluptate nesciunt facere sequi illum et perferendis vitae.
-                    Voluptas eaque magnam quod inventore, provident tempore hic
-                    odio laudantium tenetur natus iste eum perspiciatis quas
-                    nesciunt dolor praesentium, odit debitis qui dolorem minus
-                    fugit eveniet? Omnis aperiam accusamus impedit. Enim
-                    consequatur rerum tempora, saepe inventore, recusandae
-                    debitis reprehenderit, quo illum officiis hic laboriosam
-                    molestiae molestias iure sequi quis deleniti et! Inventore
-                    rerum unde nesciunt illo distinctio non quibusdam nobis?
-                    Culpa blanditiis impedit quo beatae minus quis consectetur
-                    ipsam nihil qui cupiditate at sit eum cumque molestias
-                    inventore harum porro explicabo, possimus quas eligendi
-                    similique sunt? Laboriosam recusandae vitae repellat! Quas,
-                    hic corporis repudiandae vel esse quaerat distinctio aperiam
-                    amet molestias sequi optio quis recusandae. Impedit ullam
-                    officiis minima exercitationem animi quam dolores nisi!
-                    Voluptatem similique commodi unde consequuntur aperiam!
                 </div>
             </div>
         </div>
     </body>
     <footer>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-        perspiciatis reprehenderit, architecto commodi, animi, facere tempora
-        numquam neque voluptate quo vel eum aliquid illo hic eos maiores ut
-        aperiam nostrum!
     </footer>
-    <script src="nav.js"></script>
+    <script>
+        {% script nav.js %}
+    </script>
+
+    {% templates test.html %}
 </html>
+{% BLOCK base %} {% ENDBLOCK base %}
+<hr />
+{% BLOCK base1 %} {% ENDBLOCK base1 %}
+<hr />

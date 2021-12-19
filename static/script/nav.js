@@ -11,7 +11,6 @@ navTabButton.addEventListener("click", () => toggleNavBarVisibility());
 function toggleNavBarVisibility() {
     const toggleNav = document.getElementById("nav-tab-toggle");
     toggleNav.checked = !toggleNav.checked;
-
     if (toggleNav.checked) {
         navTabButton.innerHTML = ">>";
         navTabContent.classList.add("hide");
