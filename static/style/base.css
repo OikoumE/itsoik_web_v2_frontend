@@ -114,6 +114,7 @@ nav {
 /* -------------------- CONTENT --------------------  */
 .content-container {
     overflow: hidden;
+    height: 95vh;
 }
 
 /* -------------------- TEST --------------------  */

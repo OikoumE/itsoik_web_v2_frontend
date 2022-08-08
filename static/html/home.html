@@ -1,0 +1,20 @@
+{% EXTENDS index.html %}
+<!--  -->
+{% BLOCK content %}
+<div class="test">
+    <div class="test-sub-menu">
+        <ul>
+            <h3>SUB MENU:</h3>
+        </ul>
+    </div>
+    <div class="test-content">
+        <h1>Hello World</h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+        {% INCLUDES toggleBox.html %}
+    </div>
+</div>
+
+{% BLOCK asd %} {% ENDBLOCK asd %}
+<!--  -->
+{% ENDBLOCK content %}
+<!--  -->

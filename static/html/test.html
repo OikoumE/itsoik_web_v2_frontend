@@ -1,18 +1,9 @@
-{% EXTENDS test_index.html %}
+{% EXTENDS home.html %}
 <!--  -->
-<!-- replace content below with same blocks in EXTENDS -->
-{% BLOCK base %}
-<!--! block start base  -->
-<script>
-    {% script test.js %}
-</script>
+{% BLOCK asd %}
+
 <p>this is a paragraph in test.html</p>
-<!--! block end base  -->
-{% INCLUDES test1.html %}
-<!--  -->
-{% INCLUDES test2.html %}
-<!--  -->
 
-{% ENDBLOCK base %}
+{% INCLUDES toggleBox.html %}
 
-<!--  -->
+{% ENDBLOCK asd %}

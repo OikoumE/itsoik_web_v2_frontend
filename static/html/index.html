@@ -16,7 +16,11 @@
     <body>
         <header>
             <div class="header-container">
-                <h2>ItsOIK.com</h2>
+                <h2>
+                    ItsOIK.com hello
+                    <!--  -->
+                    {{ user }}
+                </h2>
                 <div class="header-current-view">
                     <h3>Current view</h3>
                     <strong>></strong>
@@ -43,23 +47,8 @@
         </nav>
         <div class="content-container">
             <!--! content block goes here -->
-            <div class="test">
-                <div class="test-sub-menu">
-                    <ul>
-                        <h3>SUB MENU:</h3>
-                        <li>1 SUB MENU</li>
-                        <li>2 SUB MENU</li>
-                        <li>3 SUB MENU</li>
-                        <li>4 SUB MENU</li>
-                        <li>5 SUB MENU</li>
-                    </ul>
-                </div>
-                <div class="test-content">
-                    <h1>Hello World</h1>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Obcaecati pariatur doloribus vel nobis eos, voluptatum
-                </div>
-            </div>
+
+            {% BLOCK content %} {% ENDBLOCK content %}
         </div>
     </body>
     <footer>
@@ -68,10 +57,5 @@
     <script>
         {% script nav.js %}
     </script>
-
-    {% templates test.html %}
 </html>
-{% BLOCK base %} {% ENDBLOCK base %}
-<hr />
-{% BLOCK base1 %} {% ENDBLOCK base1 %}
-<hr />
+
